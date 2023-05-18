@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class GlobalExceptionHandler {
 
 
-    @ExceptionHandler(EventException.class)
+    @ExceptionHandler(VendorException.class)
     public ResponseEntity<MyErrorDetails> eventExceptionHandler(Exception e, WebRequest req) {
 
         MyErrorDetails err = new MyErrorDetails();

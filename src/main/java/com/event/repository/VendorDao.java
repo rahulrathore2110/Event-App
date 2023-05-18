@@ -1,6 +1,6 @@
 package com.event.repository;
 
-import com.event.model.Event;
+import com.event.model.Vendor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface EventDao extends JpaRepository<Event,Integer> {
-    public List<Event> findByTypeContaining(String type, Pageable pageable);
+public interface VendorDao extends JpaRepository<Vendor,Integer> {
+
 }
